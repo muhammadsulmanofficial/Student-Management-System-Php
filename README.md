@@ -30,7 +30,7 @@ A full-stack Student Management System built using **PHP, MySQL, HTML, CSS, and 
 
 ## 📁 Project Structure
 
-```
+```text
 studentdb/
 │
 ├── connection.php
@@ -38,7 +38,7 @@ studentdb/
 ├── update.php
 ├── delete.php
 ├── display.php
-├── studentmanagement.sql
+├── studentdb.sql
 └── README.md
 ```
 
@@ -73,7 +73,7 @@ Copy the **studentdb** folder and paste it into your XAMPP **htdocs** directory.
 
 Example:
 
-```
+```text
 C:\xampp\htdocs\studentdb
 ```
 
@@ -81,23 +81,23 @@ C:\xampp\htdocs\studentdb
 
 ## Step 4 — Create the Database
 
-Open your browser and go to:
+Open your browser and visit:
 
-```
+```text
 http://localhost/phpmyadmin
 ```
 
 Create a new database named:
 
-```
-studentmanagement
+```text
+studentdb
 ```
 
 ---
 
 ## Step 5 — Import the Database
 
-Select the **studentmanagement** database.
+Select the **studentdb** database.
 
 Click:
 
@@ -107,8 +107,8 @@ Click:
 
 Choose the file:
 
-```
-studentmanagement.sql
+```text
+studentdb.sql
 ```
 
 ↓
@@ -123,17 +123,14 @@ This will restore all required tables and sample data for the project.
 
 Open:
 
-```
+```text
 connection.php
 ```
 
 Make sure the database configuration is:
 
 ```php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "studentmanagement";
+$conn = new mysqli("localhost", "root", "", "studentdb");
 ```
 
 ---
@@ -142,7 +139,7 @@ $database = "studentmanagement";
 
 Open your browser and visit:
 
-```
+```text
 http://localhost/studentdb/display.php
 ```
 
@@ -154,7 +151,7 @@ The Student Management System should now be running successfully.
 
 This project includes:
 
-- Database Backup (`studentmanagement.sql`)
+- Database Backup (`studentdb.sql`)
 - Sample Student Records
 - Complete Table Structure
 
