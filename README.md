@@ -2,6 +2,39 @@
 
 A full-stack Student Management System built using **PHP, MySQL, HTML, CSS, and Bootstrap**. This application allows users to add, update, delete, search, and manage student records through a clean and responsive interface.
 
+
+---
+
+## 📸 Project Screenshots
+
+### 🏠 Home Page
+
+<img src="screenshots/display.png" width="900" alt="Home Page">
+
+---
+
+### ➕ Add Student
+
+<img src="screenshots/add-student.png" width="900" alt="Add Student">
+
+---
+
+### ✏️ Update Student
+
+<img src="screenshots/update-student.png" width="900" alt="Update Student">
+
+---
+
+### 🔍 Search Student
+
+<img src="screenshots/search-student.png" width="900" alt="Search Student">
+
+---
+
+### 🗑️ Delete Student
+
+<img src="screenshots/delete-student.png" width="900" alt="Delete Student">
+
 ---
 
 ## 🚀 Features
