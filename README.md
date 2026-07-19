@@ -2,6 +2,39 @@
 
 A full-stack Student Management System built using **PHP, MySQL, HTML, CSS, and Bootstrap**. This application allows users to add, update, delete, search, and manage student records through a clean and responsive interface.
 
+
+---
+
+## 📸 Project Screenshots
+
+### 🏠 Home Page
+
+<img src="screenshots/display.png" width="900" alt="Home Page">
+
+---
+
+### ➕ Add Student
+
+<img src="screenshots/add-student.png" width="900" alt="Add Student">
+
+---
+
+### ✏️ Update Student
+
+<img src="screenshots/update-student.png" width="900" alt="Update Student">
+
+---
+
+### 🔍 Search Student
+
+<img src="screenshots/search-student.png" width="900" alt="Search Student">
+
+---
+
+### 🗑️ Delete Student
+
+<img src="screenshots/delete-student.png" width="900" alt="Delete Student">
+
 ---
 
 ## 🚀 Features
@@ -30,7 +63,7 @@ A full-stack Student Management System built using **PHP, MySQL, HTML, CSS, and 
 
 ## 📁 Project Structure
 
-```
+```text
 studentdb/
 │
 ├── connection.php
@@ -38,7 +71,7 @@ studentdb/
 ├── update.php
 ├── delete.php
 ├── display.php
-├── studentmanagement.sql
+├── studentdb.sql
 └── README.md
 ```
 
@@ -73,7 +106,7 @@ Copy the **studentdb** folder and paste it into your XAMPP **htdocs** directory.
 
 Example:
 
-```
+```text
 C:\xampp\htdocs\studentdb
 ```
 
@@ -81,23 +114,23 @@ C:\xampp\htdocs\studentdb
 
 ## Step 4 — Create the Database
 
-Open your browser and go to:
+Open your browser and visit:
 
-```
+```text
 http://localhost/phpmyadmin
 ```
 
 Create a new database named:
 
-```
-studentmanagement
+```text
+studentdb
 ```
 
 ---
 
 ## Step 5 — Import the Database
 
-Select the **studentmanagement** database.
+Select the **studentdb** database.
 
 Click:
 
@@ -107,8 +140,8 @@ Click:
 
 Choose the file:
 
-```
-studentmanagement.sql
+```text
+studentdb.sql
 ```
 
 ↓
@@ -123,17 +156,14 @@ This will restore all required tables and sample data for the project.
 
 Open:
 
-```
+```text
 connection.php
 ```
 
 Make sure the database configuration is:
 
 ```php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "studentmanagement";
+$conn = new mysqli("localhost", "root", "", "studentdb");
 ```
 
 ---
@@ -142,7 +172,7 @@ $database = "studentmanagement";
 
 Open your browser and visit:
 
-```
+```text
 http://localhost/studentdb/display.php
 ```
 
@@ -154,7 +184,7 @@ The Student Management System should now be running successfully.
 
 This project includes:
 
-- Database Backup (`studentmanagement.sql`)
+- Database Backup (`studentdb.sql`)
 - Sample Student Records
 - Complete Table Structure
 
